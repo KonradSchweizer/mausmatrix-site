@@ -10,27 +10,46 @@
 </head>
 <body>
 <div class="wrap">
-  <header class="site">
-    <img src="logo.png" width="1400" height="568" alt="MausMatrix: Machine-Assisted, User-Verified Syntheses">
-  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <img class="logo" src="logo.png" width="1400" height="568" alt="MausMatrix: Machine-Assisted, User-Verified Syntheses">
+      <p class="lead">AI reads the papers. You verify every claim. <em>Every cell points back to the exact sentence in the PDF it came from.</em></p>
+      <div class="cta"><a class="contact" href="mailto:konradschweizer@mausmatrix.com">Get in touch</a><a class="more" href="#how">How it works</a></div>
+    </div>
+
+    <figure class="trace" aria-label="A table cell and the sentence it came from">
+      <div class="tcard">
+        <span class="tlabel">The cell</span>
+        <picture><source srcset="d-cellh-dark.webp" media="(prefers-color-scheme: dark)"><img src="d-cellh-light.webp" width="849" height="252" alt="A table cell reading: Lower exam anxiety (d = 0.41), with the chips quote, exact and figures ticked and a page chip p.3."></picture>
+      </div>
+      <div class="link" aria-hidden="true"><span>p.3 · found word for word</span></div>
+      <div class="tcard page">
+        <span class="tlabel">The sentence in the PDF</span>
+        <picture><source srcset="d-pdf-dark.webp" media="(prefers-color-scheme: dark)"><img src="d-pdf-light.webp" width="1560" height="258" alt="The PDF page with the sentence highlighted: Students in the mindfulness group reported lower exam anxiety after four weeks than students on the waiting list (d = 0.41, 95% CI 0.14 to 0.68)."></picture>
+      </div>
+    </figure>
+  </section>
 
   <main>
-    <p class="lead">AI reads the papers. You verify every claim. <em>Every cell points back to the exact sentence in the PDF it came from.</em></p>
-
-    <section aria-label="What a checked cell looks like">
-      <div class="specimen">
-        <div class="cell">
-          <div class="col"><i style="background:#3b6fd4"></i>Sample size</div>
-          <q>A total of 248 participants completed both sessions and were included in the analysis.</q>
-          <div class="chips"><span class="chip found">p.6 · found word for word</span><span class="chip who">AI · needs review</span></div>
-        </div>
-        <div class="cell">
-          <div class="col"><i style="background:#c2410c"></i>Study design</div>
-          <q>A randomised controlled trial with two parallel arms.</q>
-          <div class="chips"><span class="chip miss">⚠ not in PDF</span><span class="chip who">flagged</span></div>
-        </div>
+    <section class="steps" id="how" aria-label="How it works">
+      <div class="step">
+        <span class="num">1</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></svg>
+        <h2>Add your papers</h2>
+        <p>Drop in the PDFs and your reference list. They stay on your machine.</p>
       </div>
-      <p class="caption">Every quote is searched in the real PDF. Found, it links to its page; not found, the cell is flagged for review.</p>
+      <div class="step">
+        <span class="num">2</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/><path d="M8.5 11h5"/></svg>
+        <h2>AI reads and extracts</h2>
+        <p>Claude screens and fills the table. Every quote is searched in the real PDF.</p>
+      </div>
+      <div class="step">
+        <span class="num">3</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <h2>You verify</h2>
+        <p>One click jumps to the sentence. Confirm it, correct it, or reject it.</p>
+      </div>
     </section>
 
     <figure class="shot">
@@ -38,19 +57,30 @@
         <source srcset="screenshot-dark.webp" media="(prefers-color-scheme: dark)">
         <img src="screenshot-light.webp" width="2400" height="900" loading="lazy" alt="The MausMatrix extraction table: three papers, columns Sample, Design and Main finding. Each cell has a page chip linking to the sentence it came from; the PDF beside it shows that sentence highlighted. One cell is flagged: its quote is not in the PDF.">
       </picture></a>
-      <figcaption>The extraction table with the PDF beside it. The highlighted sentence is the source of the selected cell; the cell at bottom right is flagged because its quote does not appear in the paper. The papers shown are invented for this example.</figcaption>
+      <figcaption>The extraction table with the PDF beside it. The papers shown are invented for this example.</figcaption>
     </figure>
+
+    <section class="details" aria-label="Details">
+      <figure>
+        <picture><source srcset="d-list-dark.webp" media="(prefers-color-scheme: dark)"><img src="d-list-light.webp" width="1938" height="246" loading="lazy" alt="The marked passages of one paper, each with its column and page: Sample p.2, Design p.2, Main finding p.3."></picture>
+        <figcaption><b>Every passage, listed.</b> Each paper shows what was taken from it, by column and page.</figcaption>
+      </figure>
+      <figure>
+        <picture><source srcset="d-flag-dark.webp" media="(prefers-color-scheme: dark)"><img src="d-flag-light.webp" width="849" height="156" loading="lazy" alt="A cell flagged: not in PDF."></picture>
+        <figcaption><b>Not in the paper? Flagged.</b> A quote the PDF does not contain is marked before you rely on it.</figcaption>
+      </figure>
+    </section>
 
     <section class="points">
       <div>
         <span class="mark">⌖ source</span>
         <h2>Anchored to the source</h2>
-        <p>Every value comes with a verbatim quote, and the quote is searched in the real PDF. Quotes that cannot be found are flagged for review, so you see them before you rely on them.</p>
+        <p>Every value comes with a verbatim quote, and the quote is searched in the real PDF. Quotes that cannot be found are flagged for review.</p>
       </div>
       <div>
         <span class="mark">✓ yours</span>
         <h2>AI assists, you decide</h2>
-        <p>Claude screens and extracts; you confirm each statement with one click. Your confirmation is never overwritten by a machine.</p>
+        <p>You confirm each statement with one click. Your confirmation is never overwritten by a machine.</p>
       </div>
       <div>
         <span class="mark">▤ local</span>
