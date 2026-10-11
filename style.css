@@ -67,6 +67,8 @@ footer a{color:var(--muted)}
 .legal h1{font-family:var(--serif);font-size:32px;margin:24px 0 18px}
 .legal h2{font-size:17px;margin:26px 0 6px}
 .legal p{margin:0 0 10px}
+.notice{border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--card);border-radius:6px;padding:2px 16px 6px;margin:24px 0}
+.notice h2{margin-top:14px}
 .back{font-size:14px}
 @media (max-width:520px){ .mail{display:block;margin:10px 0 0} }
 @media (prefers-reduced-motion:no-preference){ .contact{transition:opacity .15s} }
