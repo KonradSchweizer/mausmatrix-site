@@ -42,6 +42,11 @@ header.small img{width:min(240px,60%)}
 .chip.who{color:var(--muted);border-style:dashed}
 .caption{font-size:14px;color:var(--muted);margin:0 0 6px}
 
+/* the real screenshot */
+.shot{margin:48px 0 0}
+.shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.shot figcaption{font-size:14px;color:var(--muted);margin-top:8px;max-width:70ch}
+.lang{font-size:14px;margin:0 0 4px}
 .points{display:grid;gap:28px 36px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:56px 0}
 .points h2{font-family:var(--serif);font-weight:600;font-size:21px;margin:0 0 6px}
 .points p{margin:0;color:var(--muted)}
