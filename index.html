@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MausMatrix</title>
+<meta name="description" content="MausMatrix: Machine-Assisted, User-Verified Syntheses. AI reads the papers, you verify every claim, and every cell points back to the sentence in the PDF it came from.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="logo.png" width="1400" height="568" alt="MausMatrix: Machine-Assisted, User-Verified Syntheses">
+  </header>
+
+  <main>
+    <p class="lead">AI reads the papers. You verify every claim. <em>Every cell points back to the exact sentence in the PDF it came from.</em></p>
+
+    <section aria-label="What a checked cell looks like">
+      <div class="specimen">
+        <div class="cell">
+          <div class="col"><i style="background:#3b6fd4"></i>Sample size</div>
+          <q>A total of 248 participants completed both sessions and were included in the analysis.</q>
+          <div class="chips"><span class="chip found">p.6 · found word for word</span><span class="chip who">AI · needs review</span></div>
+        </div>
+        <div class="cell">
+          <div class="col"><i style="background:#c2410c"></i>Study design</div>
+          <q>A randomised controlled trial with two parallel arms.</q>
+          <div class="chips"><span class="chip miss">⚠ not in PDF</span><span class="chip who">flagged</span></div>
+        </div>
+      </div>
+      <p class="caption">Every quote is searched in the real PDF. Found, it links to its page; not found, the cell is flagged before anyone relies on it.</p>
+    </section>
+
+    <section class="points">
+      <div>
+        <span class="mark">⌖ source</span>
+        <h2>Anchored to the source</h2>
+        <p>Every value comes with a verbatim quote, and the quote is searched in the real PDF before it enters the table. A fabricated quote cannot get in.</p>
+      </div>
+      <div>
+        <span class="mark">✓ yours</span>
+        <h2>AI assists, you decide</h2>
+        <p>Claude screens and extracts; you confirm each statement with one click. Your confirmation is never overwritten by a machine.</p>
+      </div>
+      <div>
+        <span class="mark">▤ local</span>
+        <h2>Stays on your machine</h2>
+        <p>MausMatrix runs as a single file in your browser. No server, no account. Papers are only sent to the AI model you choose.</p>
+      </div>
+    </section>
+
+    <section class="for">
+      <p>Built for systematic reviews and meta-analyses: screening, data extraction, risk of bias and effect sizes, from title and abstract to the full text.</p>
+      <p>MausMatrix is in active development. Interested in trying it with your research group? Get in touch.</p>
+      <div><a class="contact" href="mailto:konradschweizer@mausmatrix.com">Contact</a><span class="mail">konradschweizer@mausmatrix.com</span></div>
+    </section>
+
+    <p class="fine">AI-generated results can be wrong. MausMatrix shows the source of every value so you can check it; verifying results and how you use them is your responsibility. AI providers are used under your own accounts and their terms.</p>
+  </main>
+
+  <footer>
+    <span>© 2026 Konrad Schweizer</span>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+  </footer>
+</div>
+</body>
+</html>
